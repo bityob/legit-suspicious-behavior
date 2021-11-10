@@ -8,4 +8,4 @@ class AbstractNotification:
 
 class ConsoleNotification(AbstractNotification):
     def notify(self):
-        print(f"Notification: {self.message}")
+        print(self.message)

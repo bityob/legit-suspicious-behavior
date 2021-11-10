@@ -1,14 +1,14 @@
 import os
 
-from app.connectors.base import AbstractConnectorService
+from app.connectors.base import BaseConnectorService
 
 
-GITHUB_WEBHOOK_URL = os.environ("GITHUB_WEBHOOK_URL")
+class GitHubConnectorService(BaseConnectorService):
+    def get_event_field(self) -> str:
+        return self.event["event_type"]
 
-
-class GitHubConnectorService(AbstractConnectorService):
-    def __init__(self, url: str = GITHUB_WEBHOOK_URL) -> None:
-        super().__init__(url=url)
+    def get_action_field(self) -> str:
+        return self.event.get("action") or ""
 
     
         

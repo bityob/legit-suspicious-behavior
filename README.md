@@ -8,8 +8,8 @@ There are multiple services here:
 
 
 ### Flow
-* webhooks-service - Event is received from connector (aka GitHub)
-* behaviors-service - Read all the events and check for suspicious behaviors 
+* webhooks-service - Event is received from connector (aka GitHub), stored in db and published using Redis
+* behaviors-service - Read all the events from Redis and check for suspicious behaviors and print all found ones 
 
 
 

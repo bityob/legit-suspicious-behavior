@@ -48,7 +48,8 @@ $ set PYTHONPATH=. (on windows)
 $ export PYTHONPATH=. (on linux)
 $ python app\behaviors\service.py
 ```
-7. Go to your GitHub repository and start to play and trigger suspicious behaviors. The easiest suppored one is to create a team with `hacker` prefix in your organziation
+7. Go to your GitHub repository and start to play and trigger suspicious behaviors. 
+The easiest supported one is to create a team with `hacker` prefix in your organziation
 8. Now you will similiar logs in the console of `behaviors-service`
 ```
 ********
